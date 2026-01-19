@@ -1,21 +1,21 @@
 # SMT Labs Inventory App
 
 
-### 1️⃣ Install Frontend Dependencies
+### Install Frontend Dependencies
 
 ``` bash
 cd app
 npm install
 ```
 
-### 2️⃣ Install Backend Dependencies
+###Install Backend Dependencies
 
 ``` bash
 cd backend
 npm install
 ```
 
-## 🗄️ Database Setup
+## Database Setup
 
 -   Make sure **MongoDB** is running locally
 -   Use **MongoDB Compass** for a better visual understanding of the
@@ -25,7 +25,7 @@ npm install
 mongod
 ```
 
-## ▶️ Running the Project
+## Running the Project
 
 ### Start Backend Server
 
@@ -41,7 +41,7 @@ cd app
 npm run dev
 ```
 
-## 👤 Application Flow
+## Application Flow
 
 1.  Create an account\
 2.  Create an organization (you become the **Owner**)\
@@ -50,7 +50,7 @@ npm run dev
     -   Members added here will have the **Staff** role\
 5.  Start managing products, categories, orders, and inventory
 
-## 🔐 Roles & Permissions
+## Roles & Permissions
 
 ### Owner
 
@@ -62,9 +62,9 @@ npm run dev
 -   Limited access
 -   Can operate only within assigned organization
 
-## 🛠️ Tech Stack
+## Tech Stack
 
--   Frontend: React, TanStack Query, Tailwind, ShadCN
+-   Frontend: React, TanStack Query, Tailwind,
 -   Backend: Node.js, Express, MongoDB, Mongoose
 -   Database: MongoDB
 
