@@ -22,7 +22,7 @@ const Create = asyncHandler(async(req,res)=>{
 
 const Get = asyncHandler(async (req, res) => {
     let { page = 1, limit = 10,categoryId } = req.query;
-    console.log(req.query,'req.query')
+    
     const orgId = req.orgId
     // 🔹 Handle page=all
     const isAll = page === "all";

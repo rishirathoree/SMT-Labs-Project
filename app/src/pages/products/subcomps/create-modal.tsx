@@ -213,13 +213,16 @@ const CreateModal: React.FC = () => {
                 <DialogFooter className="sm:justify-end w-full">
                     <div className="flex w-full items-end justify-end space-x-4">
                         <Button
+                        onClick={()=>setShow(false)}
                             type="button"
                             variant="outline"
                             className="whitespace-nowrap"
                         >
                             Cancel
                         </Button>
-                        <Button onClick={() => { CreateProduct() }} type="submit" className="whitespace-nowrap">
+                        <Button 
+                        disabled={!name || !skuCode || !totalStock || !description || !price || !selectedCategories.length}
+                        onClick={() => { CreateProduct() }} type="submit" className="whitespace-nowrap">
                             {isPending ? "Creating..." : "Create"}
                         </Button>
                     </div>
