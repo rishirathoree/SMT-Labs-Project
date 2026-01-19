@@ -62,11 +62,7 @@ npm run dev
 -   Limited access
 -   Can operate only within assigned organization
 
-## Tech Stack
-
--   Frontend: React, TanStack Query, Tailwind,
--   Backend: Node.js, Express, MongoDB, Mongoose
--   Database: MongoDB
+## Key Points to notee
 
 -   Orders automatically update inventory stock
 -   Cancelling an order restores stock
