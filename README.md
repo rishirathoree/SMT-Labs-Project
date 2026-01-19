@@ -6,6 +6,7 @@
 ``` bash
 cd app
 nvm install 22
+nvm use 22
 npm install
 ```
 
