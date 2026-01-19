@@ -15,10 +15,13 @@ class Server {
   middlewares() {
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
-    this.app.use(cors())
+    this.app.use(cors("*"))
   }
 
   routes() {
+    this.app.get("/health",async(req,res)=>{
+      return res.send({status:"ok"})
+    })
     this.app.use("/api/users", require("../routes/users.routes"));
     this.app.use("/api/organizations", require("../routes/workspace.routes"));
     this.app.use("/api/categories", require("../routes/categories.routes"));
