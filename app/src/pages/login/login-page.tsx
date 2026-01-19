@@ -130,7 +130,7 @@ export default function Login04() {
                 Login()
               }}
               className="mt-4 w-full py-2 font-medium">
-              Sign in
+              {isPending ? "Loading..." : "Sign in"}
             </Button>
           </div>
           <p className="mt-6 text-sm text-muted-foreground dark:text-muted-foreground">

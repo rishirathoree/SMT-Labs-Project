@@ -11,6 +11,7 @@ type Props = {
 
 const RouteGuard = ({ type, withLayout = false }: Props) => {
     const { isAuthenticated, hasOrganization } = useAuthState()
+    console.log(isAuthenticated, hasOrganization)
 
     if (type === "public") {
         return isAuthenticated && hasOrganization ? (

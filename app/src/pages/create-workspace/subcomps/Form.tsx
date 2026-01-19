@@ -89,7 +89,10 @@ export default function Form() {
           <Separator className="my-6" />
           <div className="flex items-center justify-end space-x-4">
             <Button
-              onClick={() => { navigate("/") }}
+              onClick={() => {
+                dispatch(setAuth({token:null, user: null, organizations: null}))
+                localStorage.clear()
+              }}
               type="button"
               variant="outline"
               className="whitespace-nowrap"
