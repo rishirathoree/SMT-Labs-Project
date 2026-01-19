@@ -1,0 +1,1 @@
+import{Ct as e,Nt as t,Ot as n,wt as r,xt as i}from"./index-C57e6Qxc.js";n();var a=t(i(),1),o=()=>localStorage.getItem(`token`)?(0,a.jsx)(e,{to:`/`}):(0,a.jsx)(r,{});export{o as default};
